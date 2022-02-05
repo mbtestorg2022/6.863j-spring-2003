@@ -6,45 +6,459 @@ uid: 396d1d9e-70b1-2bdc-298d-673d8579f007
 
 The page numbers below refer to readings in the course textbook: Jurafsky, and Martin. _Speech and Language Processing: An Introduction to Natural Language Processing, Computational Linguistics and Speech_. Upper Saddle River, NJ: Prentice Hall, 2000. ISBN: 0130950696.
 
-| LEC # | TOPICS | READINGS |
-| --- | --- | --- |
-| {{< td-colspan 2 >}}**Week 1:** **Introduction: The NLP Enterprise, from Words to Meaning**{{< /td-colspan >}} |||
-| 1 | Introduction, Organization, Laboratories, Course Overview: Introduction to NLP, Main Issues, fsa's | pp. 1-57; Notes 1 ([PDF]({{< baseurl >}}/resources/notes1)) |
-| {{< td-colspan 2 >}}**Week 2:** **Word Modeling: Automata and Linguistics**{{< /td-colspan >}} || pp. 58-90 |
-| 2 | Linguistics: Phonology and Morphology I, 2-Level Morphology, Kimmo | Notes 2 ([PDF]({{< baseurl >}}/resources/notes2)) |
-| 3 | Linguistics: Phonology and Morphology II | pp. 287-321 |
-| {{< td-colspan 2 >}}**Week 3:** **Word Modeling: Statistical Approaches and Part of Speech Tagging**{{< /td-colspan >}} |||
-| &nbsp; | No lecture | pp. 235-284 |
-| 4 | HMM Tagging, Statistical Transformation Rule-Based Tagging, Precision, Recall, Accuracy | &nbsp; |
-| {{< td-colspan 2 >}}**Week 4:** **Linguistics and Grammars; Parsing Algorithms I**{{< /td-colspan >}} || Notes 3 ([PDF]({{< baseurl >}}/resources/notes3)) |
-| 5 | Part of Speech Tagging: The Brill Tagger | pp. 357-394 |
-| 6 | Introduction to Parsing, Linguistics: Syntax & Parsing | &nbsp; |
-| {{< td-colspan 2 >}}**Week 5:** **Parsing Algorithms II**{{< /td-colspan >}} || Notes 4 ([PDF]({{< baseurl >}}/resources/notes4)) |
-| 7 | Shift-Reduce Parsers in Detail, Earley's Algorithm and Chart Parsing | &nbsp; |
-| 8 | Context-Free Parsing and Beyond: Efficiency Issues, Feature-Based Parsing, NL System Design | pp. 477-498 |
-| {{< td-colspan 2 >}}**Week 6:** **Parsing Algorithms and the Lexicon**{{< /td-colspan >}} |||
-| 9 | Shift-Reduce Parsers in Detail, Earley's Algorithm and Chart Parsing | &nbsp; |
-| 10 | Parsing with an Integrated Lexicon - The Question of Syntactic Features | &nbsp; |
-| {{< td-colspan 2 >}}**Week 7:** **Semantic Interpretation**{{< /td-colspan >}} || pp. 395-446; pp. 447-476 |
-| 11 | Semantic Interpretation I: Compositionality | &nbsp; |
-| 12 | Semantic Interpretation II: Compositionality and Quantifiers | &nbsp; |
-| {{< td-colspan 2 >}}**Week 8:** **Feature Parsing; Tree Banks and Probabilistic Parsing**{{< /td-colspan >}} |||
-| 13 | Semantics III: Lexical Semantics | &nbsp; |
-| 14 | Semantics IV: Lexical Semantics | pp. 501-544 |
-| {{< td-colspan 2 >}}**Week 9:** **Semantics II**{{< /td-colspan >}} |||
-| 15 | Semantics V: Constraint-Based Systems | pp. 545-588 |
-| 16 | Semantics V: Constraint-Based Systems | &nbsp; |
-| {{< td-colspan 2 >}}**Week 10:** **Machine Translation I and II**{{< /td-colspan >}} || pp. 589-630 |
-| 17 | Machine Translation I | &nbsp; |
-| 18 | Machine Translation II | &nbsp; |
-| {{< td-colspan 2 >}}**Week 11:** **Machine Translation III**{{< /td-colspan >}} |||
-| 19 | Machine Translation III | pp. 631-666 |
-| {{< td-colspan 2 >}}**Week 12:** **Machine Translation IV**{{< /td-colspan >}} |||
-| &nbsp; | Project Discussion Day | &nbsp; |
-| 20 | Machine Translation IV | pp. 799-830 |
-| {{< td-colspan 2 >}}**Week 13:** **Language Learning**{{< /td-colspan >}} |||
-| 21 | Language Learning I | &nbsp; |
-| 22 | Language Learning II | &nbsp; |
-| {{< td-colspan 2 >}}**Week 14: Evolutionary Models of Language Learning and Origins**{{< /td-colspan >}} |||
-| 23 | Computational Models of Language Change, I | &nbsp; |
-| 24 | Computational Models of Language Change and The Origins of Language |
+{{< tableopen >}}
+{{< theadopen >}}
+{{< tropen >}}
+{{< thopen >}}
+LEC #
+{{< thclose >}}
+{{< thopen >}}
+TOPICS
+{{< thclose >}}
+{{< thopen >}}
+READINGS
+{{< thclose >}}
+
+{{< trclose >}}
+
+{{< theadclose >}}
+{{< tropen >}}
+{{< tdopen colspan="2" >}}
+**Week 1:** **Introduction: The NLP Enterprise, from Words to Meaning**
+{{< tdclose >}}
+{{< tdopen >}}
+ 
+{{< tdclose >}}
+
+{{< trclose >}}
+{{< tropen >}}
+{{< tdopen >}}
+1
+{{< tdclose >}}
+{{< tdopen >}}
+Introduction, Organization, Laboratories, Course Overview: Introduction to NLP, Main Issues, fsa's
+{{< tdclose >}}
+{{< tdopen >}}
+pp. 1-57; Notes 1 ([PDF]({{< baseurl >}}/resources/notes1))
+{{< tdclose >}}
+
+{{< trclose >}}
+{{< tropen >}}
+{{< tdopen colspan="2" >}}
+**Week 2:** **Word Modeling: Automata and Linguistics**
+{{< tdclose >}}
+{{< tdopen >}}
+pp. 58-90
+{{< tdclose >}}
+
+{{< trclose >}}
+{{< tropen >}}
+{{< tdopen >}}
+2
+{{< tdclose >}}
+{{< tdopen >}}
+Linguistics: Phonology and Morphology I, 2-Level Morphology, Kimmo
+{{< tdclose >}}
+{{< tdopen >}}
+Notes 2 ([PDF]({{< baseurl >}}/resources/notes2))
+{{< tdclose >}}
+
+{{< trclose >}}
+{{< tropen >}}
+{{< tdopen >}}
+3
+{{< tdclose >}}
+{{< tdopen >}}
+Linguistics: Phonology and Morphology II
+{{< tdclose >}}
+{{< tdopen >}}
+pp. 287-321
+{{< tdclose >}}
+
+{{< trclose >}}
+{{< tropen >}}
+{{< tdopen colspan="2" >}}
+**Week 3:** **Word Modeling: Statistical Approaches and Part of Speech Tagging**
+{{< tdclose >}}
+{{< tdopen >}}
+ 
+{{< tdclose >}}
+
+{{< trclose >}}
+{{< tropen >}}
+{{< tdopen >}}
+ 
+{{< tdclose >}}
+{{< tdopen >}}
+No lecture
+{{< tdclose >}}
+{{< tdopen >}}
+pp. 235-284
+{{< tdclose >}}
+
+{{< trclose >}}
+{{< tropen >}}
+{{< tdopen >}}
+4
+{{< tdclose >}}
+{{< tdopen >}}
+HMM Tagging, Statistical Transformation Rule-Based Tagging, Precision, Recall, Accuracy
+{{< tdclose >}}
+{{< tdopen >}}
+ 
+{{< tdclose >}}
+
+{{< trclose >}}
+{{< tropen >}}
+{{< tdopen colspan="2" >}}
+**Week 4:** **Linguistics and Grammars; Parsing Algorithms I**
+{{< tdclose >}}
+{{< tdopen >}}
+Notes 3 ([PDF]({{< baseurl >}}/resources/notes3))
+{{< tdclose >}}
+
+{{< trclose >}}
+{{< tropen >}}
+{{< tdopen >}}
+5
+{{< tdclose >}}
+{{< tdopen >}}
+Part of Speech Tagging: The Brill Tagger
+{{< tdclose >}}
+{{< tdopen >}}
+pp. 357-394
+{{< tdclose >}}
+
+{{< trclose >}}
+{{< tropen >}}
+{{< tdopen >}}
+6
+{{< tdclose >}}
+{{< tdopen >}}
+Introduction to Parsing, Linguistics: Syntax & Parsing
+{{< tdclose >}}
+{{< tdopen >}}
+ 
+{{< tdclose >}}
+
+{{< trclose >}}
+{{< tropen >}}
+{{< tdopen colspan="2" >}}
+**Week 5:** **Parsing Algorithms II**
+{{< tdclose >}}
+{{< tdopen >}}
+Notes 4 ([PDF]({{< baseurl >}}/resources/notes4))
+{{< tdclose >}}
+
+{{< trclose >}}
+{{< tropen >}}
+{{< tdopen >}}
+7
+{{< tdclose >}}
+{{< tdopen >}}
+Shift-Reduce Parsers in Detail, Earley's Algorithm and Chart Parsing
+{{< tdclose >}}
+{{< tdopen >}}
+ 
+{{< tdclose >}}
+
+{{< trclose >}}
+{{< tropen >}}
+{{< tdopen >}}
+8
+{{< tdclose >}}
+{{< tdopen >}}
+Context-Free Parsing and Beyond: Efficiency Issues, Feature-Based Parsing, NL System Design
+{{< tdclose >}}
+{{< tdopen >}}
+pp. 477-498
+{{< tdclose >}}
+
+{{< trclose >}}
+{{< tropen >}}
+{{< tdopen colspan="2" >}}
+**Week 6:** **Parsing Algorithms and the Lexicon**
+{{< tdclose >}}
+{{< tdopen >}}
+ 
+{{< tdclose >}}
+
+{{< trclose >}}
+{{< tropen >}}
+{{< tdopen >}}
+9
+{{< tdclose >}}
+{{< tdopen >}}
+Shift-Reduce Parsers in Detail, Earley's Algorithm and Chart Parsing
+{{< tdclose >}}
+{{< tdopen >}}
+ 
+{{< tdclose >}}
+
+{{< trclose >}}
+{{< tropen >}}
+{{< tdopen >}}
+10
+{{< tdclose >}}
+{{< tdopen >}}
+Parsing with an Integrated Lexicon - The Question of Syntactic Features
+{{< tdclose >}}
+{{< tdopen >}}
+ 
+{{< tdclose >}}
+
+{{< trclose >}}
+{{< tropen >}}
+{{< tdopen colspan="2" >}}
+**Week 7:** **Semantic Interpretation**
+{{< tdclose >}}
+{{< tdopen >}}
+pp. 395-446; pp. 447-476
+{{< tdclose >}}
+
+{{< trclose >}}
+{{< tropen >}}
+{{< tdopen >}}
+11
+{{< tdclose >}}
+{{< tdopen >}}
+Semantic Interpretation I: Compositionality
+{{< tdclose >}}
+{{< tdopen >}}
+ 
+{{< tdclose >}}
+
+{{< trclose >}}
+{{< tropen >}}
+{{< tdopen >}}
+12
+{{< tdclose >}}
+{{< tdopen >}}
+Semantic Interpretation II: Compositionality and Quantifiers
+{{< tdclose >}}
+{{< tdopen >}}
+ 
+{{< tdclose >}}
+
+{{< trclose >}}
+{{< tropen >}}
+{{< tdopen colspan="2" >}}
+**Week 8:** **Feature Parsing; Tree Banks and Probabilistic Parsing**
+{{< tdclose >}}
+{{< tdopen >}}
+ 
+{{< tdclose >}}
+
+{{< trclose >}}
+{{< tropen >}}
+{{< tdopen >}}
+13
+{{< tdclose >}}
+{{< tdopen >}}
+Semantics III: Lexical Semantics
+{{< tdclose >}}
+{{< tdopen >}}
+ 
+{{< tdclose >}}
+
+{{< trclose >}}
+{{< tropen >}}
+{{< tdopen >}}
+14
+{{< tdclose >}}
+{{< tdopen >}}
+Semantics IV: Lexical Semantics
+{{< tdclose >}}
+{{< tdopen >}}
+pp. 501-544
+{{< tdclose >}}
+
+{{< trclose >}}
+{{< tropen >}}
+{{< tdopen colspan="2" >}}
+**Week 9:** **Semantics II**
+{{< tdclose >}}
+{{< tdopen >}}
+ 
+{{< tdclose >}}
+
+{{< trclose >}}
+{{< tropen >}}
+{{< tdopen >}}
+15
+{{< tdclose >}}
+{{< tdopen >}}
+Semantics V: Constraint-Based Systems
+{{< tdclose >}}
+{{< tdopen >}}
+pp. 545-588
+{{< tdclose >}}
+
+{{< trclose >}}
+{{< tropen >}}
+{{< tdopen >}}
+16
+{{< tdclose >}}
+{{< tdopen >}}
+Semantics V: Constraint-Based Systems
+{{< tdclose >}}
+{{< tdopen >}}
+ 
+{{< tdclose >}}
+
+{{< trclose >}}
+{{< tropen >}}
+{{< tdopen colspan="2" >}}
+**Week 10:** **Machine Translation I and II**
+{{< tdclose >}}
+{{< tdopen >}}
+pp. 589-630
+{{< tdclose >}}
+
+{{< trclose >}}
+{{< tropen >}}
+{{< tdopen >}}
+17
+{{< tdclose >}}
+{{< tdopen >}}
+Machine Translation I
+{{< tdclose >}}
+{{< tdopen >}}
+ 
+{{< tdclose >}}
+
+{{< trclose >}}
+{{< tropen >}}
+{{< tdopen >}}
+18
+{{< tdclose >}}
+{{< tdopen >}}
+Machine Translation II
+{{< tdclose >}}
+{{< tdopen >}}
+ 
+{{< tdclose >}}
+
+{{< trclose >}}
+{{< tropen >}}
+{{< tdopen colspan="2" >}}
+**Week 11:** **Machine Translation III**
+{{< tdclose >}}
+{{< tdopen >}}
+ 
+{{< tdclose >}}
+
+{{< trclose >}}
+{{< tropen >}}
+{{< tdopen >}}
+19
+{{< tdclose >}}
+{{< tdopen >}}
+Machine Translation III
+{{< tdclose >}}
+{{< tdopen >}}
+pp. 631-666
+{{< tdclose >}}
+
+{{< trclose >}}
+{{< tropen >}}
+{{< tdopen colspan="2" >}}
+**Week 12:** **Machine Translation IV**
+{{< tdclose >}}
+{{< tdopen >}}
+ 
+{{< tdclose >}}
+
+{{< trclose >}}
+{{< tropen >}}
+{{< tdopen >}}
+ 
+{{< tdclose >}}
+{{< tdopen >}}
+Project Discussion Day
+{{< tdclose >}}
+{{< tdopen >}}
+ 
+{{< tdclose >}}
+
+{{< trclose >}}
+{{< tropen >}}
+{{< tdopen >}}
+20
+{{< tdclose >}}
+{{< tdopen >}}
+Machine Translation IV
+{{< tdclose >}}
+{{< tdopen >}}
+pp. 799-830
+{{< tdclose >}}
+
+{{< trclose >}}
+{{< tropen >}}
+{{< tdopen colspan="2" >}}
+**Week 13:** **Language Learning**
+{{< tdclose >}}
+{{< tdopen >}}
+ 
+{{< tdclose >}}
+
+{{< trclose >}}
+{{< tropen >}}
+{{< tdopen >}}
+21
+{{< tdclose >}}
+{{< tdopen >}}
+Language Learning I
+{{< tdclose >}}
+{{< tdopen >}}
+ 
+{{< tdclose >}}
+
+{{< trclose >}}
+{{< tropen >}}
+{{< tdopen >}}
+22
+{{< tdclose >}}
+{{< tdopen >}}
+Language Learning II
+{{< tdclose >}}
+{{< tdopen >}}
+ 
+{{< tdclose >}}
+
+{{< trclose >}}
+{{< tropen >}}
+{{< tdopen colspan="2" >}}
+**Week 14: Evolutionary Models of Language Learning and Origins**
+{{< tdclose >}}
+{{< tdopen >}}
+ 
+{{< tdclose >}}
+
+{{< trclose >}}
+{{< tropen >}}
+{{< tdopen >}}
+23
+{{< tdclose >}}
+{{< tdopen >}}
+Computational Models of Language Change, I
+{{< tdclose >}}
+{{< tdopen >}}
+ 
+{{< tdclose >}}
+
+{{< trclose >}}
+{{< tropen >}}
+{{< tdopen >}}
+24
+{{< tdclose >}}
+{{< tdopen >}}
+Computational Models of Language Change and The Origins of Language
+{{< tdclose >}}
+{{< tdopen >}}
+ 
+{{< tdclose >}}
+
+{{< trclose >}}
+
+{{< tableclose >}}
